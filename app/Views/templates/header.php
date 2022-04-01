@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
    <head>
@@ -90,11 +89,11 @@
 </li>
 
 <li class="nav-item">
-   <a href="/CertificadoController/zipDownload/" class="nav-link" style="color: #FFD700" target ='_blank'>Gerar Certificados</a>
+   <a href="/CertificadoController/zipDownload/" class="nav-link" style="color: #FFD700" target ='_blank'>Download Certificados</a>
 </li>
 
 <li class="nav-item">
-   <a href="/CertificadoController/sendCertificado/" class="nav-link" style="color: #FFD700" target ='_blank'>Send Certificados</a>
+   <a href="/CursoController/" class="nav-link" style="color: #FFD700">Cursos</a>
 </li>
 
 </ul>

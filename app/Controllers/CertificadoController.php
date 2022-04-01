@@ -18,9 +18,8 @@ class CertificadoController extends BaseController
 	}
     public function index()
     {
-    	echo view('templates/header');
-        echo view('certificados/lista');
-        echo view('templates/footer');
+    	
+        
     }
 
     public function zipDownload()
@@ -50,6 +49,13 @@ class CertificadoController extends BaseController
 
     }
 
+
+	
+	public function gerar_certificado_curso($id_curso = null)
+    {
+    	
+    }
+    
     public function sendCertificado($id_user = null)
     {
     	$email = \Config\Services::email();

@@ -1,0 +1,10 @@
+
+
+-------------------------------------
+
+function __construct(){
+        
+        /* Loading user modal and session library */
+        $this->model = new CursoModel();
+    }
+    
