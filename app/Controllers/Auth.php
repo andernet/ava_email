@@ -153,6 +153,7 @@ class Auth extends BaseController
                 ]
         ]);
         if(!$validation){
+            echo view('templates/header');
             return view('auth/login',['validation'=>$this->validator]);
         }else{
             $username = $this->request->getPost('username');

@@ -69,7 +69,7 @@
             
                <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
-                     <a class="nav-link" href="Auth/">Login</a>
+                     <a class="nav-link" href="/Auth/">Login</a>
                   </li>
                </ul>
 
