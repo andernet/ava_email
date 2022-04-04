@@ -135,7 +135,7 @@
 
                <ul class="navbar-nav my-2 my-lg-0">
                   <li class="nav-item">
-                     <a href="<?= site_url('LogoutController'); ?>">Logout</a>
+                     <a style="color: #FFD700" href="<?= site_url('LogoutController'); ?>">Logout</a>
                   </li>
                </ul>
                <?php endif; ?>

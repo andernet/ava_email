@@ -8,6 +8,12 @@ use App\Models\CursoModel;
 
 class CursoController extends BaseController
 {
+    public function __construct(){
+        helper (['form']);
+        $model = new CursoModel();
+        //parent::__construct();
+        //$this -> load -> library('form_validation');
+    }
 
     public function index()
     {
@@ -24,12 +30,12 @@ class CursoController extends BaseController
         echo view('curso/curso', $data);
     }
 
-    public function form($id = null)
+    public function form($data = null)
     {
+        helper (['form']);
         $db      = \Config\Database::connect();
         $builder = $db->table('p_curso_tipo');
         $data['curso'] = $builder->get()->getResultArray();
-        
 
         echo view('templates/header',);
         echo view('curso/form', $data);
@@ -39,18 +45,26 @@ class CursoController extends BaseController
 
     public function create()
     {
+        //dd(getPost());
         $model = new CursoModel();
-        $model->save($this->request->getVar());
+        $model->save($this->request->getPost());
         return redirect()->to("/CursoController/");
     }
 
-    public function edit($id)
+    public function edit($id_curso = null)
     {
         $model = new CursoModel();
-        $data = $model->find($id);
+        //$data = $model->find($id_curso);
+
+        if(isset($id_curso)){
+            $db      = \Config\Database::connect();
+            $builder = $db->table('p_curso');
+            $builder->where('id_curso ', $id_curso);
+            $data['curso_ed'] = $builder->get()->getRow();
+        }
         //dd($data);
 
-        $this->form();
+        $this->form($data);
     }
 
     /* controller to update a user */

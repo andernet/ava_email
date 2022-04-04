@@ -9,7 +9,6 @@ $sql = $builder->getCompiledSelect();
         $data['dados'] = $builder->get()->getRow();
 
 
-
 //retornar array
 
 
