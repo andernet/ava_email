@@ -4,12 +4,12 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class P_Curso_status extends Migration
+class P_Status extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'id_curso_status'    => [
+            'id_status'    => [
                 'type'           => 'INT',
                 'constraint'     => 5,
                 'unsigned'       => true,
@@ -27,15 +27,15 @@ class P_Curso_status extends Migration
             ]);
 
         
-        $this->forge->addKey('id_curso_status', true);
-        $this->forge->createTable('p_curso_status', false);
+        $this->forge->addKey('id_status', true);
+        $this->forge->createTable('p_status', false);
 
       
-        $this->db->query("INSERT INTO p_curso_status (status, status_descricao) VALUES ('1', 'INATIVO'), ('2', 'ATIVO')");
+        $this->db->query("INSERT INTO p_status (status, status_descricao) VALUES ('1', 'INATIVO'), ('2', 'ATIVO')");
     }
 
     public function down()
     {
-        $this->forge->dropTable('p_curso_status');
+        $this->forge->dropTable('p_status');
     }
 }

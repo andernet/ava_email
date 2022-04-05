@@ -28,6 +28,11 @@ class S_Certificado_emitido extends Migration
                 'unique'            => true,
 
             ],
+            'data_envio'          => [
+                'type'       => 'DATETIME',
+            ],
+
+
             'created_at datetime default current_timestamp',
     'updated_at datetime default current_timestamp on update current_timestamp',
 

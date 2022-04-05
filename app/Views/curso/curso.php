@@ -39,12 +39,17 @@
                 <td><?php echo $dado['curso_tipo_sigla'] ?></td>
                 <td>
                     <?php echo anchor('CursoController/edit/' . $dado['id_curso'], 'Editar', ['class' => 'btn btn-primary']) ?>
-                    <?php echo anchor('CertificadoController/geraCodigo/' . $dado['id_curso'], 'Ativar/Desativa', ['class' => 'btn btn-info']) ?>
+
+
+                    
+                    <?php echo anchor('CursoController/update/' . $dado['id_curso'], 'Ativar/Desativa', ['class' => 'btn btn-info']) ?>
+
+                    <?php echo anchor('CursoController/delete/' . $dado['id_curso'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return del_curso()']) ?>
                     
                     <?php 
                     if($dado['curso_tipo_sigla'] == 'EAD'){
 
-                    echo anchor('CertificadoController/sendCertificado/' . $dado['id_curso'], 'Enviar', ['class' => 'btn btn-success', 'target'=>'_blank' ]);
+                    echo anchor('CursoController/sendCertificado/' . $dado['id_curso'], 'Enviar', ['class' => 'btn btn-success', 'target'=>'_blank' ]);
                     }
             ?>
                 </td>

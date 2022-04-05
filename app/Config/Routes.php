@@ -48,6 +48,8 @@ $routes->group('',['filter'=>'AlreadyLoggedIn'], function($routes){
     $routes->get('/select_certificado/(:num)', 'CertificadoController::select_certificado/$1' );
     
     $routes->post('/create/', 'CursoController/::create/' );
+    $routes->post('/form/', 'CursoController/::form/' );
+    
 
 
 });

@@ -36,7 +36,7 @@
                 <td>
                     <?php echo anchor('AlunoController/edit/' . $dados['id_user'], 'Editar', ['class' => 'btn btn-primary']) ?>
                         -
-                    <?php echo anchor('AlunoController/delete/' . $dados['id_user'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return confirma()']) ?>
+                    <?php echo anchor('AlunoController/delete/' . $dados['id_user'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return del_user()']) ?>
                         -
 
                     <?php //echo anchor('CertificadoController/geraCertificado/' . $dados['cod_aluno'], 'Gerar', ['class' => 'btn btn-info', 'target'=>'_blank', 'onclick' => 'return gerar()']) 

@@ -54,7 +54,7 @@
     </table>
 
     <form class="" action="<?= base_url('/CursoController/save_curso/'); ?>" method="get">
-        <input type="hidden" name="id_curso_status" value="1" />
+        <input type="hidden" name="id_status" value="1" />
         <div class="container mt-5">
             <label for="nome_aluno">Sigla</label>
             <input type="text" class="form-control" name="curso_sigla" placeholder="Ex: Curso pra fazer curso" />

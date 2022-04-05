@@ -18,7 +18,7 @@ class CursoModel extends Model
         'curso_sigla',
         'curso_descricao',
         'curso_periodo',
-        'id_curso_status',
+        'id_status',
         'id_curso_tipo',
     ];
 
