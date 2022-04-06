@@ -6,12 +6,11 @@ use App\Helpers\Form_helper;
 use App\Controllers\BaseController;
 use App\Models\CursoModel;
 
-class CursoController extends BaseController
+class InstrutorController extends BaseController
 {
     public function __construct(){
         helper (['form']);
     }
-
 
     public function index()
     {

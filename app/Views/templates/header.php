@@ -74,6 +74,12 @@
                   <li class="nav-item">
                      <a href="/CursoController/" class="nav-link" style="color: #FFD700">Cursos</a>
                   </li>
+                  <li class="nav-item">
+                     <a href="/InstrutorController/" class="nav-link" style="color: #FFD700">Instrutores</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="/InstrucaoController/" class="nav-link" style="color: #FFD700">Instruções</a>
+                  </li>
                </ul>
                <?php else: ?>
                <ul class="navbar-nav mr-auto">
