@@ -6,41 +6,28 @@
 //exit();
 // //$info[0]->id
 //
-// print_r($curso_ed->curso_sigla)
+// print_r($instrutor_ed->instrutor_div)
 
-//dd($curso_ed->curso_sigla);
+//dd($instrutor_ed->instrutor_div);
 
 ?>
 <div class="container mt-5">
+    <h4 align="center">NOVO INTRUTOR</h4>
     
-    <form class="" action="<?= base_url('/CursoController/create/') ?>" method="post">
+    <form class="" action="<?= base_url('/InstrutorController/create/') ?>" method="post">
         
         <input type="hidden" name="id_status" id="id_status" value="1" />
 
-        <input type="hidden" name="id_curso" id="id_curso" value='<?= isset($curso_ed) ? "$curso_ed->id_curso" : ""; ?>' />
+        <input type="hidden" name="id_instrutor" id="id_instrutor" value='<?= isset($instrutor_ed) ? "$instrutor_ed->id_instrutor" : ""; ?>' />
         
         <div class="container mt-5">
             <label for="nome_aluno">Sigla</label>
-            <input type="text" value='<?= isset($curso_ed) ? "$curso_ed->curso_sigla" : ""; ?>' class="form-control" id='curso_sigla' name="curso_sigla" size="50" required/>
+            <input type="text" value='<?= isset($instrutor_ed) ? "$instrutor_ed->instrutor_div" : ""; ?>' class="form-control" id='instrutor_div' name="instrutor_div" size="50" required/>
         <br />
             <label for="nome_aluno">Descrição</label>
-            <input type="text" value='<?= isset($curso_ed) ? "$curso_ed->curso_descricao" : "" ?>' class="form-control" id="curso_descricao" name="curso_descricao" required/>
+            <input type="text" value='<?= isset($instrutor_ed) ? "$instrutor_ed->instrutor_nome" : "" ?>' class="form-control" id="instrutor_nome" name="instrutor_nome" required/>
         <br />
-            <label for="nome_aluno">Período</label>
-            <input type="text" value='<?= isset($curso_ed) ? "$curso_ed->curso_periodo" : "" ?>' class="form-control" id="curso_periodo" name="curso_periodo" required/>
-        <br />
-            <label for="nome_aluno">Tipo</label>
-            <select name="id_curso_tipo" required="required">
-                    <option value="">Selecione</option>
-
-                    <?php if(isset($curso)){ 
-                    foreach ($curso as $dado2) : ?>
-                    <option value="<?= $dado2['id_curso_tipo']; ?>"><?= $dado2['curso_tipo_sigla']; ?></option>
-                    <?php endforeach; ?>
-                        <?php } else { ?>
-        <option value="">Nao existe cursos</option>
-        <?php    }?>
-        </select>
+            
         </div>
         
         <div class="container mt-5">

@@ -15,15 +15,8 @@
          }
          
          
-         function del_user() {
-              if (!confirm('Desejar excluir o usuário?')) {
-                  return false;
-              }
-              return true;
-          }
-
-          function del_curso() {
-              if (!confirm('Desejar realmente excluir este curso?')) {
+         function deletar() {
+              if (!confirm('Desejar realmente excluir??')) {
                   return false;
               }
               return true;
@@ -63,7 +56,7 @@
                </ul>
                <?php else: ?>
                <!-- parte admin -->
-               <?php if (session()->get('tipoUser') == 1): ?>
+               <?php if (session()->get('tipoUser') == 1 || session()->get('tipoUser') == 2): ?>
                <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
                      <a class="nav-link" style="color: #FFD700" href="/UserController/">Lista usuários</a>

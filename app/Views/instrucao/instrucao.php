@@ -4,6 +4,7 @@
 //die();
 ?>
 <div class="container mt-5">
+    <h4 align="center">INTRUÇÕES</h4>
     <?php echo anchor(base_url('/InstrucaoController/form'), 'Nova Instrução', ['class' => 'btn btn-success mb-3']) ?>
 </div>
 
@@ -34,9 +35,17 @@
 
 
                     
-                    <?php echo anchor('InstrucaoController/update/' . $dado['id_instrucao'], 'Ativar/Desativa', ['class' => 'btn btn-info']) ?>
+                    <?php 
+                   
+                    echo anchor('InstrucaoController/update/' . $dado['id_instrucao'], 'Ativar/Desativa', ['class' => 'btn btn-info']);
+                    
+                    ?>
 
-                    <?php echo anchor('InstrucaoController/delete/' . $dado['id_instrucao'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return del_curso()']) ?>
+                    <?php 
+                    if (session()->get('tipoUser') == 1):
+                    echo anchor('InstrucaoController/delete/' . $dado['id_instrucao'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return deletar()']); 
+                    endif;
+                    ?>
                 </td>
             </tr>
         <?php endforeach; ?>

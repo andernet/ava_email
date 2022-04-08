@@ -12,6 +12,8 @@
 
 ?>
 <div class="container mt-5">
+    <h4 align="center">NOVA INTRUÇÃO</h4>
+
     
     <form class="" action="<?= base_url('/InstrucaoController/create/') ?>" method="post">
         

@@ -18,18 +18,13 @@ class S_User extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '20',
             ],
-            'nome'       => [
+            'nome_aluno'       => [
                 'type'       => 'VARCHAR',
                 'constraint' => '50',
             ],
             'cpf'       => [
-                'type'       => 'VARCHAR',
-                'constraint' => '11',
-            ],
-            'id_curso'       => [
                 'type'       => 'INT',
-                'constraint' => 5,
-                'unsigned'       => true,
+                'constraint' => 11,
             ],
             'id_tratamento'       => [
                 'type'       => 'INT',
@@ -56,6 +51,18 @@ class S_User extends Migration
                 'constraint' => 5,
                 'unsigned'       => true,
             ],
+
+            'saram'       => [
+                'type'       => 'VARCHAR',
+                'constraint' => '10',
+            ],
+
+            'id_curso'       => [
+                'type'       => 'INT',
+                'constraint' => 5,
+                'unsigned'       => true,
+            ],
+           
             'id_situacao'    => [
                 'type'       => 'INT',
                 'constraint' => 5,
@@ -66,10 +73,7 @@ class S_User extends Migration
                 'constraint' => 5,
                 'unsigned'   => true,
             ],
-            'saram'       => [
-                'type'       => 'VARCHAR',
-                'constraint' => '10',
-            ],
+            
             'cod_aluno'       => [
                 'type'       => 'INT',
                 'constraint' => 15,
@@ -98,7 +102,7 @@ class S_User extends Migration
         $this->forge->createTable('s_user', false);
 
         
-        $this->db->query("INSERT INTO `s_user` (`id_user`, `username`, `nome`, `cpf`, `id_curso`, `id_tratamento`, `id_posto`, `id_quadro`, `id_especialidade`, `id_om`, `id_situacao`, `id_user_tipo`, `saram`, `cod_aluno`, `password`, `email`, `created_at`, `updated_at`) VALUES (NULL, 'admin', 'Administrador', '1', '1', '1', '1', '1', '1', '1', '1', '1', '123456', '123456789', '$2y$10$3kjq1C8ZuHH12.MoKGJBM.p3vFCE1SgTW5T7v5T7uFVT0UwFH9vti', 'andernet@gmail.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP), (NULL, 'aluno', 'Aluno', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '$2y$10$3kjq1C8ZuHH12.MoKGJBM.p3vFCE1SgTW5T7v5T7uFVT0UwFH9vti', 'andernet@gmail.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP); ");
+        $this->db->query("INSERT INTO `s_user` (`id_user`, `username`, `nome_aluno`, `cpf`, `id_tratamento`, `id_posto`, `id_quadro`, `id_especialidade`, `id_om`, `saram`, `id_curso`, `id_situacao`, `id_user_tipo`, `cod_aluno`, `password`, `email`, `created_at`, `updated_at`) VALUES (NULL, 'admin', 'Admin', '123', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1111', '$2y$10$3kjq1C8ZuHH12.MoKGJBM.p3vFCE1SgTW5T7v5T7uFVT0UwFH9vti', 'andernet@gmail.com', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);");
 
 
         

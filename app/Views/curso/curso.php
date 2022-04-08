@@ -8,6 +8,7 @@
 
 <!-- <br /> -->
 <div class="container mt-5">
+    <h4 align="center">CURSOS</h4>
     <?php echo anchor(base_url('/CursoController/form'), 'Novo Curso', ['class' => 'btn btn-success mb-3']) ?>
 </div>
 
@@ -44,7 +45,12 @@
                     
                     <?php echo anchor('CursoController/update/' . $dado['id_curso'], 'Ativar/Desativa', ['class' => 'btn btn-info']) ?>
 
-                    <?php echo anchor('CursoController/delete/' . $dado['id_curso'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return del_curso()']) ?>
+                    <?php if (session()->get('tipoUser') == 1):
+
+                    echo anchor('CursoController/delete/' . $dado['id_curso'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return deletar()']);
+
+                    endif; 
+                    ?>
                     
                     <?php 
                     if($dado['curso_tipo_sigla'] == 'EAD'){

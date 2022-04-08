@@ -4,34 +4,24 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model
+class InstrutorModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 's_user';
-    protected $primaryKey       = 'id_user';
+    protected $table            = 'p_instrutor';
+    protected $primaryKey       = 'id_instrutor';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'nome_aluno',
-        'cpf',
-        'id_tratamento',
-        'id_posto',
-        'id_quadro',
-        'id_especialidade',
-        'id_om',
-        'saram',
-        'id_curso',
-        'id_user_tipo',
-        'password',
-        'email',
-        'username',
+        'instrutor_div',
+        'instrutor_nome',
+        'id_status',
     ];
 
     // Dates
-    protected $useTimestamps = False;
+    protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';

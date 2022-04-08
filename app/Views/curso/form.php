@@ -12,6 +12,8 @@
 
 ?>
 <div class="container mt-5">
+    <h4 align="center">NOVO CURSO</h4>
+
     
     <form class="" action="<?= base_url('/CursoController/create/') ?>" method="post">
         

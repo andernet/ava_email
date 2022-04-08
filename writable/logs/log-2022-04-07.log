@@ -1,0 +1,469 @@
+ERROR - 2022-04-07 07:37:31 --> Table 'ava.p_instrucao_tipo' doesn't exist
+CRITICAL - 2022-04-07 07:37:31 --> Table 'ava.p_instrucao_tipo' doesn't exist
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/app/Controllers/InstrutorController.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->index()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-07 07:37:34 --> Table 'ava.p_instrucao_tipo' doesn't exist
+CRITICAL - 2022-04-07 07:37:34 --> Table 'ava.p_instrucao_tipo' doesn't exist
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/app/Controllers/InstrutorController.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->index()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-07 07:37:37 --> Table 'ava.p_instrucao_tipo' doesn't exist
+CRITICAL - 2022-04-07 07:37:37 --> Table 'ava.p_instrucao_tipo' doesn't exist
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/app/Controllers/InstrutorController.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->index()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 07:37:50 --> Undefined array key "id_curso"
+#0 /var/www/ava/app/Views/curso/curso.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/InstrutorController.php(25): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->index()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 07:41:14 --> Undefined array key "id_curso"
+#0 /var/www/ava/app/Views/instrutor/instrutor.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/InstrutorController.php(25): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->index()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 07:41:37 --> Undefined array key "id_curso"
+#0 /var/www/ava/app/Views/instrutor/instrutor.php(35): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/InstrutorController.php(25): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->index()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 07:43:35 --> Undefined array key "Instrutor_tipo_sigla"
+#0 /var/www/ava/app/Views/instrutor/instrutor.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/InstrutorController.php(25): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->index()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 07:45:21 --> Undefined variable $builder
+#0 /var/www/ava/app/Controllers/InstrutorController.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->form()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 07:46:28 --> Undefined variable $builder
+#0 /var/www/ava/app/Controllers/InstrutorController.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->form()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 07:47:12 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->form()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-07 07:47:50 --> Undefined variable $db
+#0 /var/www/ava/app/Controllers/InstrutorController.php(32): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->form()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-07 07:47:58 --> Table 'ava.p_instrutor_tipo' doesn't exist
+CRITICAL - 2022-04-07 07:47:58 --> Table 'ava.p_instrutor_tipo' doesn't exist
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/app/Controllers/InstrutorController.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->form()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-07 08:04:19 --> Duplicate entry '3' for key 's_user.cod_aluno'
+ERROR - 2022-04-07 08:05:21 --> Table 's_user' already exists
+CRITICAL - 2022-04-07 08:07:55 --> syntax error, unexpected token "<", expecting "elseif" or "else" or "endif"
+#0 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/ava/app/Controllers/CursoController.php(26): view()
+#3 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\CursoController->index()
+#4 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-07 08:08:05 --> syntax error, unexpected token "endif"
+#0 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/ava/app/Controllers/CursoController.php(26): view()
+#3 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\CursoController->index()
+#4 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-07 08:09:25 --> syntax error, unexpected token "endif", expecting "," or ";"
+#0 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/ava/app/Controllers/InstrucaoController.php(22): view()
+#3 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrucaoController->index()
+#4 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-07 08:11:19 --> Class "App\Models\instrutorModel" not found
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->create()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-07 08:12:26 --> Class "App\Models\InstrutorModel" not found
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->create()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-07 08:12:36 --> Class "App\Models\InstrutorModel" not found
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->create()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-07 08:39:42 --> Class "App\Models\InstrutorModel" not found
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->create()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-07 08:39:47 --> Class "App\Models\InstrutorModel" not found
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\InstrutorController->create()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-07 08:48:35 --> Undefined variable $data
+#0 /var/www/ava/app/Controllers/UserController.php(103): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 08:48:53 --> view(): Argument #2 ($data) must be of type array, string given, called in /var/www/ava/app/Controllers/UserController.php on line 103
+#0 /var/www/ava/app/Controllers/UserController.php(103): view()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 09:34:36 --> syntax error, unexpected token "<", expecting end of file
+#0 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/ava/app/Controllers/UserController.php(108): view()
+#3 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#4 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-07 09:34:44 --> Undefined array key "curso_tipo_sigla"
+#0 /var/www/ava/app/Views/users/cad_user.php(141): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/UserController.php(108): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 09:34:51 --> syntax error, unexpected token ")"
+#0 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /var/www/ava/app/Controllers/UserController.php(108): view()
+#3 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#4 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-07 11:27:43 --> Undefined array key "id_curso"
+#0 /var/www/ava/app/Views/users/cad_user.php(86): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/UserController.php(108): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 11:30:12 --> Undefined array key "id_curso"
+#0 /var/www/ava/app/Views/users/cad_user.php(99): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/UserController.php(108): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 11:30:30 --> Undefined array key ""
+#0 /var/www/ava/app/Views/users/cad_user.php(99): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/UserController.php(108): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 12:05:15 --> Undefined array key "id_quadro"
+#0 /var/www/ava/app/Views/users/cad_user.php(74): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/UserController.php(123): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 12:06:12 --> Undefined array key "om"
+#0 /var/www/ava/app/Views/users/cad_user.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/UserController.php(123): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-07 12:06:18 --> Undefined array key "om"
+#0 /var/www/ava/app/Views/users/cad_user.php(108): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/View/View.php(210): include('...')
+#2 /var/www/ava/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/ava/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/ava/app/Controllers/UserController.php(123): view()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-07 12:07:51 --> Table 'ava.s_aluno' doesn't exist
+CRITICAL - 2022-04-07 12:07:51 --> Table 'ava.s_aluno' doesn't exist
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/ava/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /var/www/ava/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /var/www/ava/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /var/www/ava/app/Controllers/AlunoController.php(103): CodeIgniter\BaseModel->save()
+#9 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\AlunoController->save()
+#10 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-04-07 12:12:43 --> Table 'ava.s_aluno' doesn't exist
+CRITICAL - 2022-04-07 12:12:43 --> Table 'ava.s_aluno' doesn't exist
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/ava/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /var/www/ava/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /var/www/ava/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /var/www/ava/app/Controllers/AlunoController.php(103): CodeIgniter\BaseModel->save()
+#9 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\AlunoController->save()
+#10 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-04-07 12:14:45 --> Cannot add or update a child row: a foreign key constraint fails (`ava`.`s_user`, CONSTRAINT `s_user_id_user_tipo_foreign` FOREIGN KEY (`id_user_tipo`) REFERENCES `p_user_tipo` (`id_user_tipo`))
+CRITICAL - 2022-04-07 12:14:45 --> Cannot add or update a child row: a foreign key constraint fails (`ava`.`s_user`, CONSTRAINT `s_user_id_user_tipo_foreign` FOREIGN KEY (`id_user_tipo`) REFERENCES `p_user_tipo` (`id_user_tipo`))
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/ava/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /var/www/ava/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /var/www/ava/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /var/www/ava/app/Controllers/UserController.php(174): CodeIgniter\BaseModel->save()
+#9 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->store()
+#10 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-04-07 12:16:32 --> Call to undefined function App\Controllers\getPost()
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->store()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-07 12:16:37 --> Call to undefined function App\Controllers\getPost()
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->store()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-04-07 12:17:25 --> Cannot add or update a child row: a foreign key constraint fails (`ava`.`s_user`, CONSTRAINT `s_user_id_user_tipo_foreign` FOREIGN KEY (`id_user_tipo`) REFERENCES `p_user_tipo` (`id_user_tipo`))
+CRITICAL - 2022-04-07 12:17:25 --> Cannot add or update a child row: a foreign key constraint fails (`ava`.`s_user`, CONSTRAINT `s_user_id_user_tipo_foreign` FOREIGN KEY (`id_user_tipo`) REFERENCES `p_user_tipo` (`id_user_tipo`))
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/ava/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /var/www/ava/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /var/www/ava/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /var/www/ava/app/Controllers/UserController.php(176): CodeIgniter\BaseModel->save()
+#9 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->store()
+#10 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-04-07 12:17:30 --> Cannot add or update a child row: a foreign key constraint fails (`ava`.`s_user`, CONSTRAINT `s_user_id_user_tipo_foreign` FOREIGN KEY (`id_user_tipo`) REFERENCES `p_user_tipo` (`id_user_tipo`))
+CRITICAL - 2022-04-07 12:17:30 --> Cannot add or update a child row: a foreign key constraint fails (`ava`.`s_user`, CONSTRAINT `s_user_id_user_tipo_foreign` FOREIGN KEY (`id_user_tipo`) REFERENCES `p_user_tipo` (`id_user_tipo`))
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/ava/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /var/www/ava/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /var/www/ava/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /var/www/ava/app/Controllers/UserController.php(176): CodeIgniter\BaseModel->save()
+#9 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->store()
+#10 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-04-07 12:18:09 --> syntax error, unexpected token "public"
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 12:18:12 --> syntax error, unexpected token "public"
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 12:18:15 --> syntax error, unexpected token "public"
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-07 12:19:40 --> Call to undefined function App\Controllers\Post()
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->store()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-07 12:56:34 --> Call to undefined function App\Controllers\Post()
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-07 12:59:17 --> syntax error, unexpected token "public", expecting end of file
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-07 13:40:42 --> Unknown column 'nome_aluno' in 'field list'
+CRITICAL - 2022-04-07 13:40:42 --> Unknown column 'nome_aluno' in 'field list'
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/ava/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /var/www/ava/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /var/www/ava/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /var/www/ava/app/Controllers/UserController.php(133): CodeIgniter\BaseModel->save()
+#9 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#10 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-04-07 14:31:18 --> Unknown column 'nome_aluno' in 'field list'
+CRITICAL - 2022-04-07 14:31:18 --> Unknown column 'nome_aluno' in 'field list'
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/ava/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /var/www/ava/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /var/www/ava/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /var/www/ava/app/Controllers/UserController.php(133): CodeIgniter\BaseModel->save()
+#9 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#10 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-04-07 14:32:15 --> Unknown column 'nome_aluno' in 'field list'
+CRITICAL - 2022-04-07 14:32:15 --> Unknown column 'nome_aluno' in 'field list'
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/ava/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /var/www/ava/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /var/www/ava/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /var/www/ava/app/Controllers/UserController.php(133): CodeIgniter\BaseModel->save()
+#9 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#10 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-04-07 14:35:33 --> Unknown column 'nome' in 'field list'
+ERROR - 2022-04-07 14:36:10 --> Table 's_user' already exists

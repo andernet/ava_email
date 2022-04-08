@@ -41,29 +41,32 @@ $routes->group('',['filter'=>'AlreadyLoggedIn'], function($routes){
     $routes->get('/alunoauth/login', 'Auth::index');
     $routes->get('/auth', 'Auth::index');
     $routes->get('/auth/register', 'Auth::register');
-    $routes->get('/cad_user', 'UserController::cad_user');
+
     //$routes->match(['get','post'],'cad_user', 'UserController::cad_user', ['filter' => 'noauth']);
 
-    //$routes->get('/select_certificado/(:any)', 'CertificadoController::select_certificado/$1' );
+    //certificados  
     $routes->get('/select_certificado/(:num)', 'CertificadoController::select_certificado/$1' );
 
     //rotas curso
-    
     $routes->post('/create/', 'CursoController/::create/' );
     $routes->post('/form/', 'CursoController/::form/' );
     $routes->post('/update/(:num)', 'CursoController/::update/$1' );
 
     //rotas instrutor
-    
-    $routes->post('/create/', 'CursoController/::create/' );
-    $routes->post('/form/', 'CursoController/::form/' );
-    $routes->post('/update/(:num)', 'CursoController/::update/$1' );
+    $routes->post('/create/', 'InstrutorController/::create/' );
+    $routes->post('/form/', 'InstrutorController/::form/' );
+    $routes->post('/update/(:num)', 'InstrutorController/::update/$1' );
 
     //rotas instrucao
-    
     $routes->post('/create/', 'InstrucaoController/::create/' );
     $routes->post('/form/', 'InstrucaoController/::form/' );
     $routes->post('/update/(:num)', 'InstrucaoController/::update/$1' );
+
+    //rotas user
+    $routes->post('/', 'UserController/::index/' );
+    $routes->post('/create/', 'UserController/::create/' );
+    $routes->post('/form/', 'UserController/::form/' );
+    $routes->post('/update/(:num)', 'UserController/::update/$1' );
     
 
 

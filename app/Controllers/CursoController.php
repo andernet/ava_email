@@ -28,7 +28,7 @@ class CursoController extends BaseController
 
     public function form($data = null)
     {
-        helper (['form']);
+        //helper (['form']);
         $db      = \Config\Database::connect();
         $builder = $db->table('p_curso_tipo');
         $data['curso'] = $builder->get()->getResultArray();

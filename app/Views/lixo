@@ -1,5 +1,14 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+//verificar sql
+$sql = $builder->getCompiledSelect();
+
+//retornar array
+        //$data['dados'] = $builder->get()->getResultArray();
+        //$data['dados'] = $builder->get()->getResult();
+
+        //retorna objeto para acessar echo $data['dados']->id_curso;
+        $data['dados'] = $builder->get()->getRow();
 
 
 
@@ -16,6 +25,62 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //             [saram] => 2
 //             [cod_aluno] => 2
 //    
+
+public function send_cert()
+    {
+        echo 'x';
+    }
+
+
+    //  /* controller to create a new user */
+    // public function create(){
+
+    //     /* calling the insert function on model sending the form */
+    //     $this->model->init_insert($this->request->getVar());
+
+    //     /* add success message in flashdata */
+    //     $this->session->setFlashdata('message', "<div class = 'alert alert-success'><b>Success, user added!</b></div>");
+
+    //     /* return to default page */
+    //     return redirect("/");
+
+    // }
+
+    // /* controller to update a user */
+    // public function update(){
+
+    //     /* calling the update function on model sending the form */
+    //     $this->model->init_update($this->request->getVar());
+
+    //      add success message in flashdata 
+    //     $this->session->setFlashdata('message', "<div class = 'alert alert-success'><b>Success, user edited!</b></div>");
+
+    //     /* return to default page */
+    //     return redirect("/");
+
+
+    // }
+
+    // /* controller to delete a user */
+    // public function delete($id = NULL){
+
+    //     /* calling the delete function on model sending the url id */
+    //     $this->model->init_delete($id);
+        
+    //     /* add success message in flashdata */
+    //     $this->session->setFlashdata('message', "<div class = 'alert alert-success'><b>Success, user deleted!</b></div>");
+        
+    //     /* return to default page */
+    //     return redirect("/");
+        
+    // }
+
+
+
+
+
+
+
 
 
 

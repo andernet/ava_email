@@ -1,5 +1,6 @@
 <div class="container mt-5">
-    <?php echo anchor(base_url('/AlunoController/cad_aluno'), 'Novo aluno', ['class' => 'btn btn-success mb-3']) ?>
+    <h4 align="center">USUÁRIOS</h4>
+    <?php echo anchor(base_url('/UserController/cad_user'), 'Novo aluno', ['class' => 'btn btn-success mb-3']) ?>
     <table class="table" id="tbaluno">
         <thead>
         <tr>
@@ -25,7 +26,7 @@
                 <td><?php echo $dados['id_user'] ?></td>
                 <td><?php echo $dados['username'] ?></td>
                 <td><?php echo $dados['email'] ?></td>
-                <td><?php echo $dados['tratamento'].' '.$dados['quadro'].' '.$dados['posto_sigla'].' '.$dados['especialidade'].' '.$dados['nome'] ?></td>
+                <td><?php echo $dados['tratamento'].' '.$dados['quadro'].' '.$dados['posto_sigla'].' '.$dados['especialidade'].' '.$dados['nome_aluno'] ?></td>
                 <td><?php echo $dados['cpf'] ?></td>
                 <td><?php echo $dados['curso_sigla'] ?></td>
                 <td><?php echo $dados['om_sigla'] ?></td>
@@ -36,7 +37,7 @@
                 <td>
                     <?php echo anchor('AlunoController/edit/' . $dados['id_user'], 'Editar', ['class' => 'btn btn-primary']) ?>
                         -
-                    <?php echo anchor('AlunoController/delete/' . $dados['id_user'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return del_user()']) ?>
+                    <?php echo anchor('AlunoController/delete/' . $dados['id_user'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return deletar()']) ?>
                         -
 
                     <?php //echo anchor('CertificadoController/geraCertificado/' . $dados['cod_aluno'], 'Gerar', ['class' => 'btn btn-info', 'target'=>'_blank', 'onclick' => 'return gerar()']) 
