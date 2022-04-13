@@ -15,6 +15,7 @@ class UserModel extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
+        'username',
         'nome_aluno',
         'cpf',
         'id_tratamento',
@@ -25,9 +26,9 @@ class UserModel extends Model
         'saram',
         'id_curso',
         'id_user_tipo',
+        'cod_aluno',
         'password',
         'email',
-        'username',
     ];
 
     // Dates

@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\UserModel;
 use App\Helpers\Form_helper;
+use App\Libraries\Hash;
 
 class UserController extends BaseController
 {
@@ -61,43 +62,58 @@ class UserController extends BaseController
         // ]);
 	}
 
-	public function login()
-	{
-		$data = [];
-
-		echo view('include_files/header');
-        echo view('include_files/nav');
-		//return view('login');
-		echo view('login');
-		echo view('include_files/footer');
-	}
-
-	public function list()
-	{
-		echo view('include_files/header');
-        echo view('include_files/nav');
-		return view('users/users', [
-			'users' => $this->userModel->paginate(10),
-			'pager' => $this->userModel->pager
-		]);
-	}
-
 	public function delete($id_user)
 	{
-		if ($this->userModel->delete($user_id)) {
+		if ($this->userModel->delete($id_user)) {
 			return redirect()->to('UserController');
-			// echo view('messages', [
-			// 	'message' => 'Usuário Excluído com Sucesso'
-			// ]);
 		} else {
 			echo "Erro.";
 		}
 	}
 
-
-	public function cad_user() {
+	public function cad_user($id_user = null) 
+	{
+		//echo '<pre>';
 		
-		$db      = \Config\Database::connect();
+		//var_dump(get_defined_vars());
+
+		if(isset($id_user)){
+
+			$data['user_ed'] = $this->userModel->find($id_user);
+			// var_dump($data);
+			// exit();
+		}else{
+			//$data = $this->cad_dados();
+		}
+		$data['dados'] = $this->cad_dados();
+
+		echo view('templates/header', $data);
+        echo view('users/form');
+        echo view('templates/footer');
+
+		//https://www.youtube.com/watch?v=SbiszsRnETo
+    }
+
+    //pega os dados do usuário
+    public function cad_dados_user($id_user = null) 
+	{
+		if(isset($id_user)){
+			//echo 'id';
+			$data = $this->userModel->find($id_user);
+			// var_dump($data);
+			// exit();
+		}else{
+			//$data = $this->cad_dados();
+		}
+		
+
+		return $data;
+	}
+
+    //função para pegar os dados dos selects do form para novo usuário
+    public function cad_dados()
+    {
+    	$db      = \Config\Database::connect();
         $builder = $db->table('p_user_tipo');
         $data['user'] = $builder->get()->getResultArray();
 
@@ -119,11 +135,8 @@ class UserController extends BaseController
         $builder = $db->table('p_om');
         $data['om'] = $builder->get()->getResultArray();
 
-		echo view('templates/header', $data);
-        echo view('users/cad_user');
-        echo view('templates/footer');
-
-		//https://www.youtube.com/watch?v=SbiszsRnETo
+        return $data;
+        //dd($data);
     }
 
 	public function create()
@@ -132,23 +145,97 @@ class UserController extends BaseController
 		$data = [];
 		helper (['form']);
 
-		// 'senha'=>Hash::make($senha),
+		//dd($this->request->getVar('id_user'));
 
-		echo '<pre>';
+        if ($this->request->getMethod() == 'post') {
+			$rules = [
+				
+				'username' => 'required|min_length[5]|max_length[20]',
+		        'nome_aluno' => 'required|min_length[5]|max_length[50]',
+		        'cpf' => 'required|min_length[11]|max_length[11]',
+		        'id_tratamento' => 'required|min_length[1]|max_length[2]',
+		        'id_curso' => 'required|min_length[1]|max_length[2]',
+		        'id_user_tipo' => 'required|min_length[1]|max_length[2]',
+		        'password' => 'required|min_length[5]|max_length[20]',
+		        'password_confirm' => 'matches[password]',
+		        'email'    => 'required|valid_email',
+			];
+			if (! $this->validate($rules)) {
+				//$data = $this->cad_dados();
+
+				//echo '<pre>';
+				//print_r($data);
+				//exit();
+				$data['user_ed'] = $this->userModel->find($this->request->getVar('id_user'));
+				$data['dados'] = $this->cad_dados();
+
+				echo view('templates/header', $data);
+            	return view('users/form', ['validation'=>$this->validator]);
+			}else{
+				$model = new UserModel();
+				$cod_aluno = substr(uniqid($this->request->getVar('id_curso')), -6);
+				$newData = [
+				'username' => $this->request->getVar('username'),
+				'nome_aluno' => $this->request->getVar('nome_aluno'),
+				'cpf' => $this->request->getVar('cpf'),
+				'id_tratamento' => $this->request->getVar('id_tratamento'),
+				'id_posto' => $this->request->getVar('id_posto'),
+				'id_quadro' => $this->request->getVar('id_quadro'),
+				'id_especialidade' => $this->request->getVar('id_especialidade'),
+				'id_om' => $this->request->getVar('id_om'),
+				'saram' => $this->request->getVar('saram'),
+				'id_curso' => $this->request->getVar('id_curso'),
+				'id_user_tipo' => $this->request->getVar('id_user_tipo'),
+				'cod_aluno' => $cod_aluno,
+				'password' => Hash::make($this->request->getVar('password')),
+				'email' => $this->request->getVar('email'),
+				];
+				$model->save($newData);
+				$session = session();
+				$session->setFlashdata('success', 'Registrado com sucesso.');
+				return redirect()->to('UserController');
+			 }
+		 }
+}
+	public function edit($id_user)
+	{
+		// return $this->cad_user('users/form', [
+		// 	'data' => $this->userModel->find($id)
+		// ]);
+
+		$data = $this->userModel->find($id);
+
+		//dd($data);
+		return $this->cad_user($data);
+	}
+
+	
+
+}
+
+
+// 		echo view('include_files/header', $data);
+//         echo view('include_files/nav');
+// 		echo view('users/register');
+
+
+// 'senha'=>Hash::make($senha),
+
+		//echo '<pre>';
 		//var_dump($_POST);
 		//var_dump(get_defined_vars());
 
 
-		$password = $this->request->getVar('password');
+		//$password = $this->request->getVar('password');
 		//$this->request->getVar('password') = Hash::make($this->request->getVar('password'));
-		$getVar('password') = $password;
+		//$getVar('password');
 
-		echo $password;
-		echo $this->request->getVar('password');
-		exit();
+		// echo $password;
+		// echo $this->request->getVar('password');
+		// exit();
 
-        $db      = \Config\Database::connect();
-        $model = new userModel();
+  //       $db      = \Config\Database::connect();
+  //       $model = new userModel();
 
         //$newData = [
 
@@ -169,76 +256,21 @@ class UserController extends BaseController
 
 
 
-        $model->save($this->request->getPost());
+        //$model->save($this->request->getPost());
 
-		
 
-   //      if ($this->request->getMethod() == 'post') {
-			// //let's do the validation here
-			// //echo '1';
-			// $rules = [
+            	//$data['validation'] = ['validation'=>$this->validator];
 
-			// 	'username' => 'required|min_length[5]|max_length[20]',
-		 //        'nome_aluno' => 'required|min_length[5]|max_length[50]',
-		 //        'cpf' => 'required|min_length[11]|max_length[11]',
-		 //        'id_tratamento' => 'required|min_length[1]|max_length[2]',
-		 //        'id_curso' => 'required|min_length[1]|max_length[2]',
-		 //        'id_user_tipo' => 'required|min_length[1]|max_length[2]',
-		 //        'password' => 'required|min_length[5]|max_length[20]',
-		 //        'password_confirm' => 'matches[password]',
-		 //        'email'    => 'required|valid_email',
-			// ];
+            	// dd($data); //[errors:protected]
+            	// echo '<pre>';
+            	// print_r(['validation'=>$this->validator]);
+            	// exit();
+            	// $this->cad_user($data);
+            	//$this->cad_user(['validation'=>$this->validator]);
 
-			// if (! $this->validate($rules)) {
-			// 	//echo '2';
-			// 	$data['validation'] = $this->validator;
-			// }else{
-			// 	//echo '3';
-
-			// 	$model = new UserModel();
-
-			// 	$newData = [
-
-			// 	'username' => $this->request->getVar('user_nome'),
-			// 	'nome_aluno' => $this->request->getVar('user_nome'),
-			// 	'cpf' => $this->request->getVar('user_nome'),
-			// 	'id_tratamento' => $this->request->getVar('user_nome'),
-			// 	'id_posto' => $this->request->getVar('user_nome'),
-			// 	'id_quadro' => $this->request->getVar('user_nome'),
-			// 	'id_especialidade' => $this->request->getVar('user_nome'),
-			// 	'id_om' => $this->request->getVar('user_nome'),
-			// 	'saram' => $this->request->getVar('user_nome'),
-			// 	'id_curso' => $this->request->getVar('user_nome'),
-			// 	'id_user_tipo' => $this->request->getVar('user_nome'),
-			// 	'password' => $this->request->getVar('user_nome'),
-			// 	'email' => $this->request->getVar('user_nome'),
-			// 	];
-			// 	$model->save($newData);
-			// 	$session = session();
-			// 	$session->setFlashdata('success', 'Registrado com sucesso.');
-			// 	return redirect()->to('users/register');
-
-			// }
-		// }
 		
 
 
 		//return redirect()->to('/UserController/cad_user', $data);
 		// echo view('templates/header', $data);
 		// echo view('users/cad_user');
-}
-	public function edit($id)
-	{
-		return view('form', [
-			'user' => $this->userModel->find($id)
-		]);
-	}
-
-	
-
-}
-
-
-// 		echo view('include_files/header', $data);
-//         echo view('include_files/nav');
-// 		echo view('users/register');

@@ -1,0 +1,261 @@
+CRITICAL - 2022-04-11 07:15:40 --> Can't use function return value in write context
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-11 07:20:14 --> syntax error, unexpected token "public"
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 07:20:14 --> syntax error, unexpected token "public"
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 07:20:16 --> syntax error, unexpected token "public"
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 07:20:26 --> syntax error, unexpected token "public"
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 07:20:29 --> syntax error, unexpected token "public"
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 07:44:49 --> syntax error, unexpected token "=>", expecting ")"
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 09:07:35 --> Undefined array key "errors:protected"
+#0 /var/www/ava/app/Controllers/UserController.php(206): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 09:07:52 --> Undefined array key "errors"
+#0 /var/www/ava/app/Controllers/UserController.php(206): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 09:08:00 --> syntax error, unexpected token "=>", expecting ")"
+#0 /var/www/ava/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#1 /var/www/ava/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle()
+#2 /var/www/ava/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 09:08:30 --> Undefined variable $errors
+#0 /var/www/ava/app/Controllers/UserController.php(206): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 09:19:43 --> Undefined property: App\Controllers\UserController::$cad_dados
+#0 /var/www/ava/app/Controllers/UserController.php(227): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 09:20:18 --> Undefined property: App\Controllers\UserController::$cad_dados
+#0 /var/www/ava/app/Controllers/UserController.php(227): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 09:21:16 --> Undefined property: App\Controllers\UserController::$cad_dados
+#0 /var/www/ava/app/Controllers/UserController.php(226): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 09:23:36 --> Undefined property: App\Controllers\UserController::$cad_dados
+#0 /var/www/ava/app/Controllers/UserController.php(227): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 10:13:33 --> Undefined property: App\Controllers\UserController::$cad_dados
+#0 /var/www/ava/app/Controllers/UserController.php(227): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#2 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-11 10:20:24 --> Class "App\Controllers\Hash" not found
+#0 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->create()
+#1 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-04-11 12:37:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	`email` VARCHAR(60)' at line 15
+ERROR - 2022-04-11 12:38:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	`email` VARCHAR(60)' at line 15
+ERROR - 2022-04-11 12:42:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	`email` VARCHAR(60)' at line 15
+ERROR - 2022-04-11 12:43:52 --> Table 'ava.s_user' doesn't exist
+CRITICAL - 2022-04-11 12:43:52 --> Table 'ava.s_user' doesn't exist
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/app/Controllers/UserController.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 12:44:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	`email` VARCHAR(60)' at line 15
+ERROR - 2022-04-11 12:55:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	`email` VARCHAR(30)' at line 15
+ERROR - 2022-04-11 12:55:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	`email` VARCHAR(30)' at line 15
+ERROR - 2022-04-11 12:55:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	`email` VARCHAR(30)' at line 15
+ERROR - 2022-04-11 13:02:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NULL,
+	`email` VARCHAR(30) UNS' at line 15
+ERROR - 2022-04-11 13:04:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NULL,
+	created_at datetime default current_timestamp,
+	updated_at datet' at line 14
+ERROR - 2022-04-11 13:05:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NULL,
+	`email` VARCHAR(30) UNS' at line 15
+ERROR - 2022-04-11 13:06:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NULL,
+	`email` VARCHAR(30) UNS' at line 13
+ERROR - 2022-04-11 13:07:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	created_at datetime default current_timestamp,
+	updat' at line 15
+ERROR - 2022-04-11 13:09:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NULL,
+	`email` VARCHAR(30) UNS' at line 15
+ERROR - 2022-04-11 13:10:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR(60) NOT NULL,
+	`email` VARCHAR(30) UNSIGN' at line 15
+ERROR - 2022-04-11 13:15:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR(60) NOT NULL,
+	`email` VARCHAR(30) NOT NU' at line 15
+ERROR - 2022-04-11 13:15:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR(60) NULL,
+	`email` VARCHAR(30) NOT NULL,
+' at line 15
+ERROR - 2022-04-11 13:16:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR(60) NULL,
+	`email` VARCHAR(30) NULL,
+	cre' at line 15
+ERROR - 2022-04-11 13:27:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	created_at datetime' at line 15
+ERROR - 2022-04-11 13:27:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	created_at datetime' at line 15
+ERROR - 2022-04-11 13:28:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR(60) NOT NULL,
+	created_at datetime defaul' at line 15
+ERROR - 2022-04-11 13:28:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	created_at datetime' at line 15
+ERROR - 2022-04-11 13:28:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`password` VARCHAR(60) NOT NULL,
+	created_at datetime' at line 15
+ERROR - 2022-04-11 14:20:20 --> Table 'ava.s_user' doesn't exist
+CRITICAL - 2022-04-11 14:20:20 --> Table 'ava.s_user' doesn't exist
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/app/Controllers/UserController.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->index()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 14:20:21 --> Table 'ava.p_user_tipo' doesn't exist
+CRITICAL - 2022-04-11 14:20:21 --> Table 'ava.p_user_tipo' doesn't exist
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/app/Controllers/UserController.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 14:20:22 --> Table 'ava.p_user_tipo' doesn't exist
+CRITICAL - 2022-04-11 14:20:22 --> Table 'ava.p_user_tipo' doesn't exist
+#0 /var/www/ava/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/ava/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/ava/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/ava/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/ava/app/Controllers/UserController.php(105): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/ava/system/CodeIgniter.php(832): App\Controllers\UserController->cad_user()
+#6 /var/www/ava/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/ava/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/ava/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-11 14:20:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR(60) NOT NULL,
+	created_at datetime defaul' at line 15
+ERROR - 2022-04-11 14:21:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR(60) NOT NULL,
+	created_at datetime defaul' at line 15
+ERROR - 2022-04-11 14:22:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`password` VARCHAR(60) NOT NULL,
+	created_at datetime defaul' at line 15
+ERROR - 2022-04-11 14:23:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	created_at datetime default current_timestamp,
+	updated_at d' at line 16
+ERROR - 2022-04-11 14:23:48 --> Failed to add the foreign key constraint. Missing index for constraint 's_pre_curso_cod_aluno_foreign' in the referenced table 's_user'
+ERROR - 2022-04-11 14:24:38 --> Failed to add the foreign key constraint. Missing index for constraint 's_respostas_ava_cod_aluno_foreign' in the referenced table 's_user'
+ERROR - 2022-04-11 14:25:11 --> Failed to add the foreign key constraint. Missing index for constraint 's_ava_curso_cod_aluno_foreign' in the referenced table 's_user'
+ERROR - 2022-04-11 14:27:40 --> Failed to add the foreign key constraint. Missing index for constraint 's_ava_curso_cod_aluno_foreign' in the referenced table 's_user'
+ERROR - 2022-04-11 14:27:55 --> Failed to add the foreign key constraint. Missing index for constraint 's_ava_curso_cod_aluno_foreign' in the referenced table 's_user'
+ERROR - 2022-04-11 14:33:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NULL,
+	`cod_aluno` VARCHAR(15) UNSIGNED NOT NULL UNIQUE,
+	`password` VA' at line 15
+ERROR - 2022-04-11 14:34:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NULL,
+	`cod_aluno` VARCHAR(15) UNSIGNED NOT NULL,
+	`password` VARCHAR(6' at line 15
+ERROR - 2022-04-11 14:34:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NULL,
+	`cod_aluno` VARCHAR(15) NOT NULL,
+	`password` VARCHAR(60) NULL,
+' at line 15
+ERROR - 2022-04-11 14:35:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NULL,
+	`cod_aluno` VARCHAR(15) NOT NULL,
+	`password` VARCHAR(60) NULL,
+' at line 15

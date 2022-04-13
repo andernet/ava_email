@@ -119,6 +119,7 @@ class Auth extends BaseController
                 'id_user_tipo'=>$id_user_tipo,
             ];
 
+
             //$usersModel = new
             $userModel = new UserModel();
             $query = $userModel->insert($values);

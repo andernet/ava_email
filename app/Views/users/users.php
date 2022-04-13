@@ -11,7 +11,8 @@
             <th>Curso</th>
             <th>OM</th>
             <th>Situação</th>
-            <th>saram</th>
+            <th>Saram</th>
+            <th>Email</th>
             <th>Cod aluno</th>
             <th>Cod verificacao</th>
             <th>Ações</th>
@@ -25,19 +26,20 @@
             <tr>
                 <td><?php echo $dados['id_user'] ?></td>
                 <td><?php echo $dados['username'] ?></td>
-                <td><?php echo $dados['email'] ?></td>
+                
                 <td><?php echo $dados['tratamento'].' '.$dados['quadro'].' '.$dados['posto_sigla'].' '.$dados['especialidade'].' '.$dados['nome_aluno'] ?></td>
                 <td><?php echo $dados['cpf'] ?></td>
                 <td><?php echo $dados['curso_sigla'] ?></td>
                 <td><?php echo $dados['om_sigla'] ?></td>
                 <td><?php echo $dados['situacao'] ?></td>
                 <td><?php echo $dados['saram'] ?></td>
+                <td><?php echo $dados['email'] ?></td>
                 <td><?php echo $dados['cod_aluno'] ?></td>
                 <td><?php echo $dados['cod_verificacao'] ?></td>
                 <td>
-                    <?php echo anchor('AlunoController/edit/' . $dados['id_user'], 'Editar', ['class' => 'btn btn-primary']) ?>
+                    <?php echo anchor('UserController/cad_user/' . $dados['id_user'], 'Editar', ['class' => 'btn btn-primary']) ?>
                         -
-                    <?php echo anchor('AlunoController/delete/' . $dados['id_user'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return deletar()']) ?>
+                    <?php echo anchor('UserController/delete/' . $dados['id_user'], "<button type='button' class='btn btn-danger'>Excluir</button>", ['onclick' => 'return deletar()']) ?>
                         -
 
                     <?php //echo anchor('CertificadoController/geraCertificado/' . $dados['cod_aluno'], 'Gerar', ['class' => 'btn btn-info', 'target'=>'_blank', 'onclick' => 'return gerar()']) 
