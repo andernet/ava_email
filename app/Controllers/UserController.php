@@ -141,6 +141,7 @@ class UserController extends BaseController
 
 	public function create()
 	{
+		$model = new UserModel();
 		$validation =  \Config\Services::validation();
 		$data = [];
 		helper (['form']);
@@ -156,8 +157,8 @@ class UserController extends BaseController
 		        'id_tratamento' => 'required|min_length[1]|max_length[2]',
 		        'id_curso' => 'required|min_length[1]|max_length[2]',
 		        'id_user_tipo' => 'required|min_length[1]|max_length[2]',
-		        'password' => 'required|min_length[5]|max_length[20]',
-		        'password_confirm' => 'matches[password]',
+		        //'password' => 'required|min_length[5]|max_length[20]',
+		        //'password_confirm' => 'matches[password]',
 		        'email'    => 'required|valid_email',
 			];
 			if (! $this->validate($rules)) {
@@ -172,8 +173,26 @@ class UserController extends BaseController
 				echo view('templates/header', $data);
             	return view('users/form', ['validation'=>$this->validator]);
 			}else{
-				$model = new UserModel();
+				
+
+				// echo '<pre>';
+				// print_r(get_defined_vars());
+				// var_dump($_POST);
+				// exit();
+
+				//dd($this->request->getVar('cod_aluno'));
+
+				if($_POST['cod_aluno']){
+					$cod_aluno = '';
+					// echo '1';
+					// exit();
+				}else{
+					
 				$cod_aluno = substr(uniqid($this->request->getVar('id_curso')), -6);
+				// 	echo '2';
+				// 	exit();
+				}
+
 				$newData = [
 				'username' => $this->request->getVar('username'),
 				'nome_aluno' => $this->request->getVar('nome_aluno'),
@@ -190,12 +209,26 @@ class UserController extends BaseController
 				'password' => Hash::make($this->request->getVar('password')),
 				'email' => $this->request->getVar('email'),
 				];
-				$model->save($newData);
+
+				
+
+				if($_POST['cod_aluno'])
+				{	
+					$model->set($newData);
+					$model->where('id_user', $_POST['id_user']);
+					$model->update($_POST['id_user'], $newData);
+
+				}else{
+					$model->save($newData);
+					}
+				}
+
+				
 				$session = session();
 				$session->setFlashdata('success', 'Registrado com sucesso.');
 				return redirect()->to('UserController');
 			 }
-		 }
+		 
 }
 	public function edit($id_user)
 	{

@@ -12,7 +12,6 @@ class CursoController extends BaseController
         helper (['form']);
     }
 
-
     public function index()
     {
         $db      = \Config\Database::connect();

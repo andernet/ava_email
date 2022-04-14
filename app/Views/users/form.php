@@ -33,6 +33,7 @@
             <hr>
             <form class="" action="/UserController/create" method="post">
                <input type="hidden" name="id_user" id="id_user" value="<?= isset($user_ed) ? $user_ed['id_user'] : ''; ?>" />
+               <input type="hidden" name="cod_aluno" id="cod_aluno" value="<?= isset($user_ed) ? $user_ed['cod_aluno'] : ''; ?>" />
 
              
 
@@ -67,7 +68,7 @@
                            <?php 
                            if(isset($dados['tratamento'])){ 
                               foreach ($dados['tratamento'] as $dado2) : ?>
-                           <option value="<?= $dado2['id_tratamento']; ?>" <?= $dado2['id_tratamento'] == $user_ed['id_tratamento'] ? 'selected' : ''?>><?= $dado2['tratamento']; ?></option>
+                           <option value="<?= $dado2['id_tratamento']; ?>" <?= isset($user_ed) ? ($dado2['id_tratamento'] == $user_ed['id_tratamento'] ? 'selected' : '') : '';?>><?= $dado2['tratamento']; ?></option>
                            <?php endforeach; ?>
                            <?php } else { ?>
                            <option value="">Nao existe cursos</option>
@@ -84,7 +85,7 @@
                            <?php 
                            if(isset($dados['posto'])){ 
                               foreach ($dados['posto'] as $dado2) : ?>
-                           <option value="<?= $dado2['id_posto']; ?>" <?= $dado2['id_tratamento'] == $user_ed['id_tratamento'] ? 'selected' : ''?>><?= $dado2['posto_sigla']; ?></option>
+                           <option value="<?= $dado2['id_posto']; ?>" <?= isset($user_ed) ? ($dado2['id_posto'] == $user_ed['id_posto'] ? 'selected' : '') : '' ?>><?= $dado2['posto_sigla']; ?></option>
                            <?php endforeach; ?>
                            <?php } else { ?>
                            <option value="">Nao existe cursos</option>
@@ -101,7 +102,7 @@
                            <?php 
                            if(isset($dados['quadro'])){ 
                               foreach ($dados['quadro'] as $dado2) : ?>
-                           <option value="<?= $dado2['id_quadro']; ?>"><?= $dado2['quadro']; ?></option>
+                           <option value="<?= $dado2['id_quadro']; ?>" <?= isset($user_ed) ? ($dado2['id_quadro'] == $user_ed['id_quadro'] ? 'selected' : '') : '' ?>><?= $dado2['quadro']; ?></option>
                            <?php endforeach; ?>
                            <?php } else { ?>
                            <option value="">Nao existe cursos</option>
@@ -118,7 +119,7 @@
                            <?php 
                            if(isset($dados['especialidade'])){ 
                               foreach ($dados['especialidade'] as $dado2) : ?>
-                           <option value="<?= $dado2['id_especialidade']; ?>"><?= $dado2['especialidade']; ?></option>
+                           <option value="<?= $dado2['id_especialidade']; ?>" <?= isset($user_ed) ? ($dado2['id_especialidade'] == $user_ed['id_especialidade'] ? 'selected' : '') : ''?>><?= $dado2['especialidade']; ?></option>
                            <?php endforeach; ?>
                            <?php } else { ?>
                            <option value="">Nao existe cursos</option>
@@ -135,7 +136,7 @@
                            <?php 
                            if(isset($dados['om'])){ 
                               foreach ($dados['om'] as $dado2) : ?>
-                           <option value="<?= $dado2['id_om']; ?>"><?= $dado2['om_sigla']; ?></option>
+                           <option value="<?= $dado2['id_om']; ?>" <?= isset($user_ed) ? ($dado2['id_om'] == $user_ed['id_om'] ? 'selected' : '') : ''?>><?= $dado2['om_sigla']; ?></option>
                            <?php endforeach; ?>
                            <?php } else { ?>
                            <option value="">Nao existe cursos</option>
@@ -161,7 +162,7 @@
                            <?php 
                            if(isset($dados['curso'])){ 
                               foreach ($dados['curso'] as $dado2) : ?>
-                           <option value="<?= $dado2['id_curso']; ?>"><?= $dado2['curso_sigla']; ?></option>
+                           <option value="<?= $dado2['id_curso']; ?>" <?= isset($user_ed) ? ($dado2['id_curso'] == $user_ed['id_curso'] ? 'selected' : '') : '' ?>><?= $dado2['curso_sigla']; ?></option>
                            <?php endforeach; ?>
                            <?php } else { ?>
                            <option value="">Nao existe cursos</option>
@@ -177,7 +178,7 @@
                            <?php 
                            if(isset($dados['user'])){ 
                               foreach ($dados['user'] as $dado2) : ?>
-                           <option value="<?= $dado2['id_user_tipo']; ?>"><?= $dado2['user_tipo_descricao']; ?></option>
+                           <option value="<?= $dado2['id_user_tipo']; ?>" <?= isset($user_ed) ? ($dado2['id_user_tipo'] == $user_ed['id_user_tipo'] ? 'selected' : '') : '';?>><?= $dado2['user_tipo_descricao']; ?></option>
                            <?php endforeach; ?>
                            <?php } else { ?>
                            <option value="">Nao existe cursos</option>
