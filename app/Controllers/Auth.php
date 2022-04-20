@@ -177,6 +177,8 @@ class Auth extends BaseController
             }
         }
     }
+    
+
     // $data = [
     //                 'id_user' => $user_info['id_user'],
     //                 'user_nome' => $user_info['user_nome'],

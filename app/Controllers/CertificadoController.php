@@ -131,15 +131,19 @@ class CertificadoController extends BaseController
 	 	$builder = $db->table('s_certificado_emitido');
 	 	$builder->select('cod_aluno');
 	 	$builder->where('cod_aluno ', $cod_aluno );
-	 	$data['dados'] = $builder->get()->getRow();
+	 	$data = $builder->get()->getRow();
 
-	 	// print_r($data)	; 1123136255
-	 						//1123136255
-	 	// exit();
+	 	// print_r($data); 
 
-	 	$cod_verificacao =  uniqid($cod_aluno);
-			echo $cod_verificacao;
-			exit();
+	 	dd($cod_aluno);
+	 					
+	 	//  exit();
+
+	 	//$cod_verificacao =  uniqid($cod_aluno);
+		$cod_verificacao = substr(uniqid(), -6);
+
+			// echo $cod_verificacao;
+			// exit();
 
 		if ( isset($data['dados'])) {
 			$data =[

@@ -182,17 +182,55 @@ class UserController extends BaseController
 
 				//dd($this->request->getVar('cod_aluno'));
 
+				//verifica se vai ser update ou novo
 				if($_POST['cod_aluno']){
-					$cod_aluno = '';
-					// echo '1';
-					// exit();
+
+					if($_POST['password']){
+
+						$newData = [
+						'username' => $this->request->getVar('username'),
+						'nome_aluno' => $this->request->getVar('nome_aluno'),
+						'cpf' => $this->request->getVar('cpf'),
+						'id_tratamento' => $this->request->getVar('id_tratamento'),
+						'id_posto' => $this->request->getVar('id_posto'),
+						'id_quadro' => $this->request->getVar('id_quadro'),
+						'id_especialidade' => $this->request->getVar('id_especialidade'),
+						'id_om' => $this->request->getVar('id_om'),
+						'saram' => $this->request->getVar('saram'),
+						'id_curso' => $this->request->getVar('id_curso'),
+						'id_user_tipo' => $this->request->getVar('id_user_tipo'),
+						'password' => Hash::make($this->request->getVar('password')),
+						'email' => $this->request->getVar('email'),
+						];
+
+						}else{
+							$newData = [
+							'username' => $this->request->getVar('username'),
+							'nome_aluno' => $this->request->getVar('nome_aluno'),
+							'cpf' => $this->request->getVar('cpf'),
+							'id_tratamento' => $this->request->getVar('id_tratamento'),
+							'id_posto' => $this->request->getVar('id_posto'),
+							'id_quadro' => $this->request->getVar('id_quadro'),
+							'id_especialidade' => $this->request->getVar('id_especialidade'),
+							'id_om' => $this->request->getVar('id_om'),
+							'saram' => $this->request->getVar('saram'),
+							'id_curso' => $this->request->getVar('id_curso'),
+							'id_user_tipo' => $this->request->getVar('id_user_tipo'),
+							'email' => $this->request->getVar('email'),
+							];
+
+							
+						}
+						$model->set($newData);
+					$model->where('id_user', $_POST['id_user']);
+					$model->update($_POST['id_user'], $newData);
+					
+
+					
+
 				}else{
 					
-				$cod_aluno = substr(uniqid($this->request->getVar('id_curso')), -6);
-				// 	echo '2';
-				// 	exit();
-				}
-
+				$cod_aluno = substr(uniqid(), -6);
 				$newData = [
 				'username' => $this->request->getVar('username'),
 				'nome_aluno' => $this->request->getVar('nome_aluno'),
@@ -210,18 +248,10 @@ class UserController extends BaseController
 				'email' => $this->request->getVar('email'),
 				];
 
-				
-
-				if($_POST['cod_aluno'])
-				{	
-					$model->set($newData);
-					$model->where('id_user', $_POST['id_user']);
-					$model->update($_POST['id_user'], $newData);
-
-				}else{
-					$model->save($newData);
-					}
+				$model->save($newData);
+			
 				}
+
 
 				
 				$session = session();
@@ -229,6 +259,7 @@ class UserController extends BaseController
 				return redirect()->to('UserController');
 			 }
 		 
+}
 }
 	public function edit($id_user)
 	{

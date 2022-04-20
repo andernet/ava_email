@@ -35,12 +35,12 @@ $routes->get('/', 'Home::index');
 
 
 
-$routes->group('',['filter'=>'AlreadyLoggedIn'], function($routes){
+$routes->group('',['filter'=>'AlreadyLoggedInFilter'], function($routes){
     
     $routes->get('/auth/login', 'Auth::index');
     $routes->get('/alunoauth/login', 'Auth::index');
     $routes->get('/auth', 'Auth::index');
-    $routes->get('/auth/register', 'Auth::register');
+    
 
     //$routes->match(['get','post'],'cad_user', 'UserController::cad_user', ['filter' => 'noauth']);
 
@@ -62,23 +62,27 @@ $routes->group('',['filter'=>'AlreadyLoggedIn'], function($routes){
     $routes->post('/form/', 'InstrucaoController/::form/' );
     $routes->post('/update/(:num)', 'InstrucaoController/::update/$1' );
 
-    //rotas user
-    $routes->post('/', 'UserController/::index/' );
-    $routes->post('/create/', 'UserController/::create/' );
-    $routes->post('/form/', 'UserController/::form/' );
-    $routes->post('/update/(:num)', 'UserController/::update/$1' );
+    // //rotas user
+    // $routes->post('/', 'UserController/::index/' );
+    // $routes->post('/create/', 'UserController/::create/' );
+    // $routes->post('/form/', 'UserController/::form/' );
+    // $routes->post('/update/(:num)', 'UserController/::update/$1' );
     
 
 
 });
 
-$routes->group('',['filter'=>'AuthCheck'], function($routes){
+$routes->group('',['filter'=>'AuthCheckFilter'], function($routes){
     $routes->get('/home/dashboard', 'Home::dashboard');
     $routes->get('/', 'Auth::index');
     $routes->get('/auth/register', 'Auth::register');
 
-    $routes->get('/home/lista_aluno', 'Home::lista_aluno');
-    $routes->get('/home/profile', 'Home::profile');
+     //rotas user
+    $routes->post('/', 'UserController/::index/' );
+    $routes->post('/create/', 'UserController/::create/' );
+    $routes->post('/form/', 'UserController/::form/' );
+    $routes->post('/update/(:num)', 'UserController/::update/$1' );
+    
 
 
 });

@@ -1,0 +1,18 @@
+ERROR - 2022-04-20 14:47:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL UNIQUE,
+	`cod_verificacao` VARCHAR(60) NOT NULL UNIQUE,
+	`data' at line 3
+ERROR - 2022-04-20 14:47:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`cod_verificacao` VARCHAR(60) NOT NULL UNIQUE,
+	`data_envio`' at line 3
+ERROR - 2022-04-20 14:48:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`cod_verificacao` VARCHAR(60) UNSIGNED NOT NULL UNIQUE,
+	`da' at line 3
+ERROR - 2022-04-20 14:49:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`cod_verificacao` VARCHAR(60) NOT NULL UNIQUE,
+	`data_envio`' at line 3
+ERROR - 2022-04-20 14:50:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`cod_verificacao` VARCHAR(60) NOT NULL,
+	`data_envio` DATETI' at line 3
+ERROR - 2022-04-20 14:51:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`cod_verificacao` VARCHAR(60) NOT NULL,
+	`data_envio` DATETI' at line 3

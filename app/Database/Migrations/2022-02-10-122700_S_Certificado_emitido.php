@@ -17,16 +17,14 @@ class S_Certificado_emitido extends Migration
             ],
 
             'cod_aluno'          => [
-                'type'           => 'INT',
-                'constraint'     => 15,
+                'type'           => 'VARCHAR',
+                'constraint'     => 10,
                 'unsigned'       => true,
-                'unique'     => true,
+                
             ],
-            'cod_verificacao'          => [
+            'cod_verificacao'   => [
                 'type'       => 'VARCHAR',
-                'constraint' => '60',
-                'unique'            => true,
-
+                'constraint' => 60,
             ],
             'data_envio'          => [
                 'type'       => 'DATETIME',

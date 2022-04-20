@@ -1,3 +1,4 @@
+<?= csrf_field(); ?>
 <div class="container mt-5">
     <h4 align="center">USUÁRIOS</h4>
     <?php echo anchor(base_url('/UserController/cad_user'), 'Novo aluno', ['class' => 'btn btn-success mb-3']) ?>

@@ -32,6 +32,7 @@
             <h3>Registro de aluno</h3>
             <hr>
             <form class="" action="/UserController/create" method="post">
+               <?= csrf_field(); ?>
                <input type="hidden" name="id_user" id="id_user" value="<?= isset($user_ed) ? $user_ed['id_user'] : ''; ?>" />
                <input type="hidden" name="cod_aluno" id="cod_aluno" value="<?= isset($user_ed) ? $user_ed['cod_aluno'] : ''; ?>" />
 

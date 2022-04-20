@@ -14,6 +14,8 @@ class LogoutController extends BaseController
     {
        if(session()->has('loggedUser')){
             session()->remove('loggedUser');
+            session()->remove('tipoUser');
+
             //return redirect()->to('/auth?access=out')->with('fail',     'Usuário desconectado!');
             return redirect()->to('/');
 
